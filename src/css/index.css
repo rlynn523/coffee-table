@@ -1,0 +1,14 @@
+html {
+  	box-sizing: border-box;
+}
+*, *:before, *:after {
+ 	box-sizing: inherit;
+}
+
+.masthead {
+  background-image: url('../images/coffee.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -4em;
+  height: 52em;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "coffee-table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "author": "",
+  "license": "ISC"
+}
