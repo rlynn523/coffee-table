@@ -4,11 +4,59 @@ html {
 *, *:before, *:after {
  	box-sizing: inherit;
 }
-
+.menu {
+  background-color: #6e5533;
+  position: fixed;
+  height: 10%;
+  width: 100%;
+  z-index: 1;
+}
+.menu-title {
+  float: left;
+  padding-top: 1.25%;
+}
+.menu ul {
+  list-style: none;
+}
+.menu-items li, .menu-title {
+  display: inline-block;
+  font-size: 2em;
+}
+.menu-items li {
+  float: right;
+  padding: 1.25%
+}
+.menu-items li:hover {
+  transform: scale(1.15) rotate(10deg);
+  transition-duration: 1s;
+  cursor: pointer;
+}
 .masthead {
   background-image: url('../images/coffee.png');
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -4em;
   height: 52em;
+}
+.slogan {
+    display: none;
+}
+.about, .why {
+    height: 25em;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about {
+    background-color: #4CA3BA;
+    height: 25em;
+    border: 5px solid #e2a86e;
+}
+.why {
+  background-color: #e2a86e;
+  height: 25em;
+  border: 5px solid #4CA3BA;
 }

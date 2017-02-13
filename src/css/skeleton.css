@@ -126,9 +126,15 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
 }
-.title, .slogan {
+.title, .slogan, .about-title, .why-title, .menu-title, .menu-items li {
   font-family: Bahiana, cursive;
-  color: white;
+  color: #FFFFFF;
+  text-shadow: 3px 0 #D98E44;
+}
+.why-title {
+  font-family: Bahiana, cursive;
+  color: #FFFFFF;
+  text-shadow: 3px 0 #3b8598;
 }
 .title {
   font-size: 5em;
@@ -136,7 +142,14 @@ body {
 .slogan {
   font-size: 4em;
 }
-
+.about-title, .why-title {
+    font-size: 5em;
+}
+.about-para, .why-para {
+  font-size: 1.5em;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
