@@ -126,10 +126,15 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
 }
-.title, .slogan, .about-title, .why-title, .menu-title, .menu-items li {
+.title, .slogan, .about-title, .why-title {
   font-family: Bahiana, cursive;
   color: #FFFFFF;
   text-shadow: 3px 0 #D98E44;
+}
+.menu-title, .menu-items li {
+    font-family: Bahiana, cursive;
+    color: #FFFFFF;
+    text-shadow: 2px 0 #D98E44;
 }
 .why-title {
   font-family: Bahiana, cursive;
@@ -176,15 +181,6 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 p {
   margin-top: 0; }
-
-
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #1EAEDB; }
-a:hover {
-  color: #0FA0CE; }
-
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

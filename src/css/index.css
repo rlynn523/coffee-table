@@ -26,10 +26,17 @@ html {
   float: right;
   padding: 1.25%
 }
-.menu-items li:hover {
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.menu-title:hover, .menu-items li:hover {
   transform: scale(1.15) rotate(10deg);
   transition-duration: 1s;
   cursor: pointer;
+}
+.fa-coffee {
+  padding-right: 10px;
 }
 .masthead {
   background-image: url('../images/coffee.png');
