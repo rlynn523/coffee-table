@@ -126,20 +126,20 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
 }
-.title, .slogan, .about-title, .why-title {
+.title, .slogan, .about-title, .testimonial-title {
   font-family: Bahiana, cursive;
   color: #FFFFFF;
   text-shadow: 3px 0 #D98E44;
-}
-.menu-title, .menu-items li {
-    font-family: Bahiana, cursive;
-    color: #FFFFFF;
-    text-shadow: 2px 0 #D98E44;
 }
 .why-title {
   font-family: Bahiana, cursive;
   color: #FFFFFF;
   text-shadow: 3px 0 #3b8598;
+}
+.menu-title, .menu-items li {
+    font-family: Bahiana, cursive;
+    color: #FFFFFF;
+    text-shadow: 2px 0 #D98E44;
 }
 .title {
   font-size: 5em;
@@ -147,7 +147,7 @@ body {
 .slogan {
   font-size: 4em;
 }
-.about-title, .why-title {
+.about-title, .why-title, .testimonial-title {
     font-size: 5em;
 }
 .about-para, .why-para {
@@ -155,7 +155,11 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 300;
 }
-
+.testimonial-para {
+  font-size: 1.25em;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {

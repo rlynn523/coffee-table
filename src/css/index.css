@@ -50,20 +50,31 @@ a {
 .slogan {
     display: none;
 }
-.about, .why {
+.about, .why, .testimonial {
     height: 25em;
     color: #FFFFFF;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
-.about {
+.about, .testimonial {
     background-color: #4CA3BA;
-    height: 25em;
     border: 5px solid #e2a86e;
 }
 .why {
   background-color: #e2a86e;
-  height: 25em;
   border: 5px solid #4CA3BA;
+}
+.yoga:hover {
+  color: #e2a86e;
+}
+.fa-arrow-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #FFFFFF;
+}
+.fa-arrow-up:hover {
+  transform: scale(2);
+  transition-duration:1s;
 }

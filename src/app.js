@@ -1,5 +1,6 @@
 $(function() {
     $('.slogan').toggle('drop', {direction: 'up'}, 2000);
+    $('.menu').accordion();
 });
 function scrollUp(){
    $('html, body').animate({ scrollTop: $('.masthead').position().top}, 2000);
