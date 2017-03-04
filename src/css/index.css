@@ -5,7 +5,7 @@ html {
  	box-sizing: inherit;
 }
 .menu {
-  background-color: #6e5533;
+  background-color: #FFFFFF;
   position: fixed;
   height: 10%;
   width: 100%;
@@ -20,7 +20,8 @@ html {
 }
 .menu-items li, .menu-title {
   display: inline-block;
-  font-size: 2em;
+  font-size: 1.5em;
+  font-weight: 300;
 }
 .menu-items li {
   float: right;
@@ -30,10 +31,15 @@ a {
   text-decoration: none;
   color: #FFFFFF;
 }
-.menu-title:hover, .menu-items li:hover {
-  transform: scale(1.15) rotate(10deg);
-  transition-duration: 1s;
+.menu-items li:hover {
   cursor: pointer;
+}
+.menu-select {
+  font-style: italic;
+  text-decoration: underline;
+}
+.menu-items a {
+  color: #000000;
 }
 .fa-coffee {
   padding-right: 10px;
@@ -57,24 +63,41 @@ a {
     align-items: center;
     justify-content: center
 }
-.about, .testimonial {
-    background-color: #4CA3BA;
-    border: 5px solid #e2a86e;
+.family {
+  border-radius: 100%;
+  background-image: url('../images/family.png');
+  height: 15em;
+  width: 15em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -25px;
+  border: 2px solid #FFFFFF;
 }
-.why {
-  background-color: #e2a86e;
-  border: 5px solid #4CA3BA;
+.about {
+  background-image: url('../images/about.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testimonial {
+  background-image: url('../images/testimonial.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .yoga:hover {
-  color: #e2a86e;
+  color: #939393;
 }
-.fa-arrow-up {
+.fa-chevron-up {
   position: fixed;
   bottom: 20px;
   right: 20px;
   color: #FFFFFF;
 }
-.fa-arrow-up:hover {
+.fa-chevron-up:hover {
   transform: scale(2);
   transition-duration:1s;
+  color: #939393;
 }

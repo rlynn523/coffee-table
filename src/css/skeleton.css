@@ -127,25 +127,20 @@ body {
   color: #222;
 }
 .title, .slogan, .about-title, .testimonial-title {
-  font-family: Bahiana, cursive;
+  font-family: 'Neuton', serif;
   color: #FFFFFF;
-  text-shadow: 3px 0 #D98E44;
-}
-.why-title {
-  font-family: Bahiana, cursive;
-  color: #FFFFFF;
-  text-shadow: 3px 0 #3b8598;
+  font-weight: 200;
 }
 .menu-title, .menu-items li {
-    font-family: Bahiana, cursive;
-    color: #FFFFFF;
-    text-shadow: 2px 0 #D98E44;
+    font-family: Roboto, sans-serif;
+    color: #000000;
 }
 .title {
   font-size: 5em;
 }
 .slogan {
-  font-size: 4em;
+  font-size: 2.5em;
+  font-style: italic;
 }
 .about-title, .why-title, .testimonial-title {
     font-size: 5em;
