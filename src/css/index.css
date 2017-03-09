@@ -10,6 +10,7 @@ html {
   height: 10%;
   width: 100%;
   z-index: 1;
+  border-bottom: 2px solid #000000;
 }
 .menu-title {
   float: left;
@@ -31,15 +32,18 @@ a {
   text-decoration: none;
   color: #FFFFFF;
 }
+.menu-items a {
+  color: #000000;
+}
 .menu-items li:hover {
   cursor: pointer;
+  font-style: italic;
+}
+.bars {
+  display: none;
 }
 .menu-select {
   font-style: italic;
-  text-decoration: underline;
-}
-.menu-items a {
-  color: #000000;
 }
 .fa-coffee {
   padding-right: 10px;
@@ -56,18 +60,19 @@ a {
 .slogan {
     display: none;
 }
-.about, .why, .testimonial {
-    height: 25em;
+.about, .testimonial {
+    height: 42em;
     color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center
+}
+.contact, .tools {
+  height: 42em;
 }
 .family {
   border-radius: 100%;
   background-image: url('../images/family.png');
-  height: 15em;
-  width: 15em;
+  height: 20em;
+  width: 20em;
+  margin-top: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -25px;
@@ -75,13 +80,18 @@ a {
 }
 .about {
   background-image: url('../images/about.png');
+  filter: grayscale(100%);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.fa-cogs {
+  padding-right: 0.5em;
+}
 .testimonial {
   background-image: url('../images/testimonial.png');
+  filter: grayscale(100%);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -94,10 +104,38 @@ a {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  color: #FFFFFF;
+  color: #939393;
 }
 .fa-chevron-up:hover {
   transform: scale(2);
   transition-duration:1s;
-  color: #939393;
+}
+.bar-menu {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+    .menu-items {
+        display: none;
+    }
+    .bar-menu {
+      background-color: #000000;
+    }
+    .bar-menu li {
+      border-bottom: 1px solid #FFFFFF;
+      display: block;
+      float: none;
+      height: 2em;
+      width: 10em;
+      text-align: center;
+    }
+    .bar-menu li:hover {
+      cursor: pointer;
+      font-style: italic;
+      opacity: 0.6
+    }
+    .bars {
+      display: block;
+      float: right;
+      padding: 1.5%
+    }
 }

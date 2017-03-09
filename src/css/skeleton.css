@@ -131,29 +131,37 @@ body {
   color: #FFFFFF;
   font-weight: 200;
 }
+.tools-title, .contact-title {
+  font-family: 'Neuton', serif;
+  font-weight: 200;
+}
 .menu-title, .menu-items li {
     font-family: Roboto, sans-serif;
     color: #000000;
 }
 .title {
-  font-size: 5em;
+  font-size: 4.75em;
+  margin-bottom: 1em;
 }
 .slogan {
   font-size: 2.5em;
   font-style: italic;
 }
-.about-title, .why-title, .testimonial-title {
+.about-title, .tools-title, .testimonial-title, .contact-title {
     font-size: 5em;
 }
-.about-para, .why-para {
+.about-para, .tools-para, .tools-paraTwo, .testimonial-para {
   font-size: 1.5em;
   font-family: Roboto, sans-serif;
   font-weight: 300;
 }
+.about-para {
+  background: rgba(000,0,0,0.5);
+  padding: 1.5em;
+}
 .testimonial-para {
-  font-size: 1.25em;
-  font-family: Roboto, sans-serif;
-  font-weight: 300;
+  background: rgba(000,0,0,0.8);
+  padding: 1.5em;
 }
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
