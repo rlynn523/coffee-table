@@ -113,29 +113,46 @@ a {
 .bar-menu {
   display: none;
 }
-@media only screen and (max-width: 600px) {
-    .menu-items {
-        display: none;
-    }
-    .bar-menu {
-      background-color: #000000;
-    }
-    .bar-menu li {
-      border-bottom: 1px solid #FFFFFF;
-      display: block;
-      float: none;
-      height: 2em;
-      width: 10em;
-      text-align: center;
-    }
-    .bar-menu li:hover {
-      cursor: pointer;
-      font-style: italic;
-      opacity: 0.6
-    }
-    .bars {
-      display: block;
-      float: right;
-      padding: 1.5%
-    }
+.fa-phone, .fa-envelope {
+  font-size: 1.5em;
+}
+/*~~~~~~ MEDIA QUERIES ~~~~~~*/
+
+@media only screen and (max-width: 830px) {
+  .masthead {
+    background-position-y: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .masthead, .about, .tools, .testimonial, .contact {
+    height: auto;
+  }
+  .menu-items {
+      display: none;
+  }
+  .bar-menu {
+    background-color: #000000;
+    margin-top: 2em;
+  }
+  .bar-menu li {
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    height: 2em;
+    width: 10em;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .bar-menu li:hover {
+    cursor: pointer;
+    font-style: italic;
+    opacity: 0.6
+  }
+  .fa-bars {
+    float: right;
+  }
+  .bars {
+    display: block;
+    float: right;
+    padding-top: 3%
+  }
 }
