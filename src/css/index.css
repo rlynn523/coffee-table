@@ -4,6 +4,9 @@ html {
 *, *:before, *:after {
  	box-sizing: inherit;
 }
+
+/*~~~~~~ MENU ~~~~~~*/
+
 .menu {
   background-color: #FFFFFF;
   position: fixed;
@@ -48,6 +51,12 @@ a {
 .fa-coffee {
   padding-right: 10px;
 }
+.bar-menu {
+  display: none;
+}
+
+/*~~~~~~ MASTHEAD ~~~~~~*/
+
 .masthead {
   background-image: url('../images/coffee.png');
   background-attachment: fixed;
@@ -60,25 +69,11 @@ a {
 .slogan {
     display: none;
 }
-.about, .testimonial {
-    height: 42em;
-    color: #FFFFFF;
-}
-.contact, .tools {
-  height: 42em;
-}
-.family {
-  border-radius: 100%;
-  background-image: url('../images/family.png');
-  height: 20em;
-  width: 20em;
-  margin-top: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -25px;
-  border: 2px solid #FFFFFF;
-}
+
+/*~~~~~~ ABOUT ~~~~~~*/
+
 .about {
+  color: #FFFFFF;
   background-image: url('../images/about.png');
   filter: grayscale(100%);
   background-attachment: fixed;
@@ -86,10 +81,27 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.family {
+  border-radius: 100%;
+  background-image: url('../images/family.png');
+  height: 16em;
+  width: 16em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -25px;
+  border: 2px solid #FFFFFF;
+}
+
+/*~~~~~~ TOOLS ~~~~~~*/
+
 .fa-cogs {
   padding-right: 0.5em;
 }
+
+/*~~~~~~ TESTIMONIALS ~~~~~~*/
+
 .testimonial {
+  color: #FFFFFF;
   background-image: url('../images/testimonial.png');
   filter: grayscale(100%);
   background-attachment: fixed;
@@ -100,6 +112,9 @@ a {
 .yoga:hover {
   color: #939393;
 }
+
+/*~~~~~~ ARROW ~~~~~~*/
+
 .fa-chevron-up {
   position: fixed;
   bottom: 20px;
@@ -110,22 +125,41 @@ a {
   transform: scale(2);
   transition-duration:1s;
 }
-.bar-menu {
-  display: none;
+
+/*~~~~~~ CONTACT ~~~~~~*/
+
+.contact-para {
+  margin-bottom: 0;
+}
+#contact-icons {
+  text-align: center;
 }
 .fa-phone, .fa-envelope {
-  font-size: 1.5em;
+  margin: 1em 0;
+  color: #000000;
 }
+.fa-phone:hover, .fa-envelope:hover {
+  transform: rotate(360deg);
+  transition-duration:1s;
+  color: #939393;
+}
+
 /*~~~~~~ MEDIA QUERIES ~~~~~~*/
 
 @media only screen and (max-width: 830px) {
   .masthead {
     background-position-y: 0;
   }
+  .about-para, .tools-para, .tools-paraTwo, .testimonial-para, .contact-para, .contact-info {
+    font-size: 1.15em;
+  }
 }
 @media only screen and (max-width: 768px) {
   .masthead, .about, .tools, .testimonial, .contact {
     height: auto;
+  }
+  .menu-title {
+    padding-top: 3%;
   }
   .menu-items {
       display: none;
@@ -137,6 +171,7 @@ a {
   .bar-menu li {
     border-top: 1px solid #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
     height: 2em;
     width: 10em;
     text-align: center;
@@ -154,5 +189,11 @@ a {
     display: block;
     float: right;
     padding-top: 3%
+  }
+}
+@media only screen and (max-width: 550px) {
+  .family {
+    margin: auto;
+    margin-bottom: 25px;
   }
 }

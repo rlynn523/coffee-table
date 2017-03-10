@@ -150,7 +150,7 @@ body {
 .about-title, .tools-title, .testimonial-title, .contact-title {
     font-size: 5em;
 }
-.about-para, .tools-para, .tools-paraTwo, .testimonial-para, .contact-info {
+.about-para, .tools-para, .tools-paraTwo, .testimonial-para, .contact-para, .contact-info {
   font-size: 1.5em;
   font-family: Roboto, sans-serif;
   font-weight: 300;
@@ -163,9 +163,12 @@ body {
   background: rgba(000,0,0,0.8);
   padding: 1.5em;
 }
-.bar-menu li {
+.bar-menu li, .footer {
   font-family: Roboto, sans-serif;
   font-weight: 300;
+}
+.footer {
+  text-align: center;
 }
 
 /* Typography
