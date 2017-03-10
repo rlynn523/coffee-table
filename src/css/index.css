@@ -86,6 +86,7 @@ a {
   background-image: url('../images/family.png');
   height: 16em;
   width: 16em;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -25px;
