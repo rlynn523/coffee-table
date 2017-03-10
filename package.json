@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -c-1"
+    "start": "http-server -c-1",
+    "add" : "git add -A",
+    "push" : "git push origin staging"
   },
   "author": "",
   "license": "ISC"
