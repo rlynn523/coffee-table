@@ -170,7 +170,11 @@ body {
 .footer {
   text-align: center;
 }
-
+@media only screen and (max-width: 830px) {
+    .about-para, .tools-para, .tools-paraTwo, .testimonial-para, .contact-para, .contact-info {
+      font-size: 1.15em;
+    }
+}
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
