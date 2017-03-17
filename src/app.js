@@ -4,39 +4,54 @@ $(function() {
     scrollAbout();
     $(this).addClass('menu-select');
     $('.testimonial-menu').removeClass('menu-select');
-    $('.tools-menu').removeClass('menu-select');
+    $('.skills-menu').removeClass('menu-select');
     $('.bar-menu').hide('bar-menu');
+    $('.fa-times-circle-o').hide();
+    $('.fa-bars').show();
   });
   $('.testimonial-menu').click(function() {
     scrollTestimonial();
     $(this).addClass('menu-select');
     $('.about-menu').removeClass('menu-select');
     $('.contact-menu').removeClass('menu-select');
-    $('.tools-menu').removeClass('menu-select');
+    $('.skills-menu').removeClass('menu-select');
     $('.bar-menu').hide('bar-menu');
+    $('.fa-times-circle-o').hide();
+    $('.fa-bars').show();
   });
-  $('.tools-menu').click(function() {
-    scrollTools();
+  $('.skills-menu').click(function() {
+    scrollSkills();
     $(this).addClass('menu-select');
     $('.about-menu').removeClass('menu-select');
     $('.contact-menu').removeClass('menu-select');
     $('.testimonial-menu').removeClass('menu-select');
     $('.bar-menu').hide('bar-menu');
+    $('.fa-times-circle-o').hide();
+    $('.fa-bars').show();
   });
   $('.contact-menu').click(function() {
     scrollContact();
     $(this).addClass('menu-select');
     $('.about-menu').removeClass('menu-select');
     $('.testimonial-menu').removeClass('menu-select');
-    $('.tools-menu').removeClass('menu-select');
+    $('.skills-menu').removeClass('menu-select');
     $('.bar-menu').hide('bar-menu');
+    $('.fa-times-circle-o').hide();
+    $('.fa-bars').show();
   });
   $('.fa-chevron-up').click(function() {
     scrollUp();
     $('*').removeClass('menu-select');
   });
   $('.fa-bars').click(function() {
-    $('.bar-menu').toggle();
+    $('.bar-menu').show();
+    $('.fa-times-circle-o').show();
+    $(this).hide();
+  });
+  $('.fa-times-circle-o').click(function() {
+    $('.bar-menu').hide();
+    $('.fa-bars').show();
+    $(this).hide();
   });
 });
 function scrollUp(){
@@ -45,8 +60,8 @@ function scrollUp(){
 function scrollAbout(){
    $('html, body').animate({ scrollTop: $('.about').position().top - $(".menu").height()}, 1500);
 }
-function scrollTools(){
-   $('html, body').animate({ scrollTop: $('.tools').position().top - $(".menu").height()}, 1500);
+function scrollSkills(){
+   $('html, body').animate({ scrollTop: $('.skills').position().top - $(".menu").height()}, 1500);
 }
 function scrollTestimonial(){
    $('html, body').animate({ scrollTop: $('.testimonial').position().top - $(".menu").height()}, 1500);
