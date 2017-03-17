@@ -10,14 +10,14 @@ html {
 .menu {
   background-color: #FFFFFF;
   position: fixed;
-  height: 10%;
+  height: 4em;
   width: 100%;
   z-index: 1;
   border-bottom: 2px solid #000000;
 }
 .menu-title {
   float: left;
-  padding-top: 1.25%;
+  line-height: 2.5em;
 }
 .menu ul {
   list-style: none;
@@ -26,10 +26,11 @@ html {
   display: inline-block;
   font-size: 1.5em;
   font-weight: 300;
+  line-height: 2.5em;
 }
 .menu-items li {
   float: right;
-  padding: 1.25%
+  padding-right: 2.5%
 }
 a {
   text-decoration: none;
@@ -56,7 +57,9 @@ a {
 }
 
 /*~~~~~~ MASTHEAD ~~~~~~*/
-
+.title {
+  padding-top: 1em;
+}
 .masthead {
   background-image: url('../images/coffee.png');
   background-attachment: fixed;
@@ -153,18 +156,15 @@ a {
   }
 }
 @media only screen and (max-width: 768px) {
-  .masthead, .about, .tools, .testimonial, .contact {
+  .masthead, .about, .skills, .testimonial, .contact {
     height: auto;
-  }
-  .menu-title {
-    padding-top: 3%;
   }
   .menu-items {
       display: none;
   }
   .bar-menu {
     background-color: #000000;
-    margin-top: 2em;
+    margin-top: 4em;
   }
   .bar-menu li {
     border-top: 1px solid #FFFFFF;
@@ -178,20 +178,23 @@ a {
   .bar-menu li:hover {
     cursor: pointer;
     font-style: italic;
-    opacity: 0.6
+    opacity: 0.6;
   }
-  .fa-bars {
+  .fa-bars, .fa-times-circle-o {
     float: right;
   }
   .bars {
     display: block;
     float: right;
-    padding-top: 3%
+    line-height: 2em;
   }
 }
 @media only screen and (max-width: 550px) {
   .family {
     margin: auto;
     margin-bottom: 25px;
+  }
+  .skills-para {
+    margin-bottom: 0;
   }
 }
