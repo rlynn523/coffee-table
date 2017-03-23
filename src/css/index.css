@@ -34,9 +34,6 @@ html {
 }
 a {
   text-decoration: none;
-  color: #FFFFFF;
-}
-.menu-items a {
   color: #000000;
 }
 .menu-items li:hover {
@@ -59,6 +56,7 @@ a {
 /*~~~~~~ MASTHEAD ~~~~~~*/
 .title {
   padding-top: 1em;
+  margin-bottom: 2em;
 }
 .masthead {
   background-image: url('../images/coffee.png');
@@ -96,10 +94,15 @@ a {
   border: 2px solid #FFFFFF;
 }
 
-/*~~~~~~ TOOLS ~~~~~~*/
+/*~~~~~~ WORK/SKILLS ~~~~~~*/
 
 .fa-cogs {
   padding-right: 0.5em;
+}
+.project:hover {
+  color: #939393;
+  cursor: pointer;
+  font-style: italic;
 }
 
 /*~~~~~~ TESTIMONIALS ~~~~~~*/
@@ -113,8 +116,13 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.testimonial-para a {
+  color: #FFFFFF;
+}
 .yoga:hover {
   color: #939393;
+  cursor: pointer;
+  font-style: italic;
 }
 
 /*~~~~~~ ARROW ~~~~~~*/
@@ -156,7 +164,7 @@ a {
   }
 }
 @media only screen and (max-width: 768px) {
-  .masthead, .about, .skills, .testimonial, .contact {
+  .masthead, .about, .work, .skills, .testimonial, .contact {
     height: auto;
   }
   .menu-items {
@@ -167,18 +175,24 @@ a {
     margin-top: 4em;
   }
   .bar-menu li {
-    border-top: 1px solid #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
+    border-top: 2px solid #939393;
+    border-left: 2px solid #939393;
+    border-right: 2px solid #939393;
     color: #FFFFFF;
     height: 2em;
     width: 10em;
     text-align: center;
     margin-bottom: 0;
   }
+  .contact-menu {
+    border-bottom: 2px solid #939393;
+  }
   .bar-menu li:hover {
     cursor: pointer;
     font-style: italic;
-    opacity: 0.6;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 2px solid #000000;
   }
   .fa-bars, .fa-times-circle-o {
     float: right;

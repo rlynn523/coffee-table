@@ -1,10 +1,11 @@
 $(function() {
-  $('.slogan').toggle('drop', {direction: 'up'}, 2000);
+  $('.slogan').toggle('slide', {direction: 'left'}, 1500);
   $('.about-menu').click(function() {
     scrollAbout();
     $(this).addClass('menu-select');
     $('.testimonial-menu').removeClass('menu-select');
     $('.skills-menu').removeClass('menu-select');
+    $('.work-menu').removeClass('menu-select');
     $('.bar-menu').hide('bar-menu');
     $('.fa-times-circle-o').hide();
     $('.fa-bars').show();
@@ -14,7 +15,19 @@ $(function() {
     $(this).addClass('menu-select');
     $('.about-menu').removeClass('menu-select');
     $('.contact-menu').removeClass('menu-select');
+    $('.work-menu').removeClass('menu-select');
     $('.skills-menu').removeClass('menu-select');
+    $('.bar-menu').hide('bar-menu');
+    $('.fa-times-circle-o').hide();
+    $('.fa-bars').show();
+  });
+  $('.work-menu').click(function() {
+    scrollWork();
+    $(this).addClass('menu-select');
+    $('.about-menu').removeClass('menu-select');
+    $('.contact-menu').removeClass('menu-select');
+    $('.skills-menu').removeClass('menu-select');
+    $('.testimonial-menu').removeClass('menu-select');
     $('.bar-menu').hide('bar-menu');
     $('.fa-times-circle-o').hide();
     $('.fa-bars').show();
@@ -24,6 +37,7 @@ $(function() {
     $(this).addClass('menu-select');
     $('.about-menu').removeClass('menu-select');
     $('.contact-menu').removeClass('menu-select');
+    $('.work-menu').removeClass('menu-select');
     $('.testimonial-menu').removeClass('menu-select');
     $('.bar-menu').hide('bar-menu');
     $('.fa-times-circle-o').hide();
@@ -34,6 +48,7 @@ $(function() {
     $(this).addClass('menu-select');
     $('.about-menu').removeClass('menu-select');
     $('.testimonial-menu').removeClass('menu-select');
+    $('.work-menu').removeClass('menu-select');
     $('.skills-menu').removeClass('menu-select');
     $('.bar-menu').hide('bar-menu');
     $('.fa-times-circle-o').hide();
@@ -59,6 +74,9 @@ function scrollUp(){
 }
 function scrollAbout(){
    $('html, body').animate({ scrollTop: $('.about').position().top - $(".menu").height()}, 1500);
+}
+function scrollWork(){
+   $('html, body').animate({ scrollTop: $('.work').position().top - $(".menu").height()}, 1500);
 }
 function scrollSkills(){
    $('html, body').animate({ scrollTop: $('.skills').position().top - $(".menu").height()}, 1500);
