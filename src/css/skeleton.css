@@ -127,13 +127,11 @@ body {
   color: #222;
 }
 .title, .slogan, .about-title, .testimonial-title {
-  font-family: 'Neuton', serif;
+  font-family: 'Proza Libre', sans-serif;
   color: #FFFFFF;
-  font-weight: 200;
 }
 .skills-title, .contact-title, .work-title {
-  font-family: 'Neuton', serif;
-  font-weight: 200;
+  font-family: 'Proza Libre', sans-serif;
 }
 .menu-title, .menu-items li {
     font-family: Roboto, sans-serif;
@@ -145,9 +143,6 @@ body {
 .slogan {
   font-size: 2.5em;
   font-style: italic;
-}
-.title, .slogan {
-  text-shadow: 2px 2px black;
 }
 .about-title, .work-title, .skills-title, .testimonial-title, .contact-title {
     font-size: 5em;

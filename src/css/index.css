@@ -56,7 +56,11 @@ a {
 /*~~~~~~ MASTHEAD ~~~~~~*/
 .title {
   padding-top: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 0;
+}
+.slogan, .title {
+  background: rgba(000,0,0,0.5);
+  text-align: center;
 }
 .masthead {
   background-image: url('../images/coffee.png');
@@ -95,9 +99,26 @@ a {
 }
 
 /*~~~~~~ WORK/SKILLS ~~~~~~*/
-
-.fa-cogs {
-  padding-right: 0.5em;
+#live-vinyl, #iss-spotter, #shelter-dog, #tv-ratings {
+    margin-bottom: 2em;
+}
+.vinyl, .iss, .dog, .tv {
+  height: 10em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.vinyl {
+  background-image: url('../images/vinyl.png');
+}
+.iss {
+  background-image: url('../images/iss.png');
+}
+.dog {
+  background-image: url('../images/dog.png');
+}
+.tv {
+  background-image: url('../images/tv.png');
 }
 .project:hover {
   color: #939393;
