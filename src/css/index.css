@@ -208,13 +208,10 @@ a {
   .masthead {
     background-position-y: 0;
   }
-  .about-para, .skills-para, .skills-paraTwo, .testimonial-para, .contact-para, .contact-info {
-    font-size: 1.15em;
-  }
 }
 @media only screen and (max-width: 768px) {
   .menu-items {
-      display: none;
+    display: none;
   }
   .bar-menu {
     background-color: #000000;
