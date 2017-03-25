@@ -127,13 +127,11 @@ body {
   color: #222;
 }
 .title, .slogan, .about-title, .testimonial-title {
-  font-family: 'Neuton', serif;
+  font-family: 'Proza Libre', sans-serif;
   color: #FFFFFF;
-  font-weight: 200;
 }
 .skills-title, .contact-title, .work-title {
-  font-family: 'Neuton', serif;
-  font-weight: 200;
+  font-family: 'Proza Libre', sans-serif;
 }
 .menu-title, .menu-items li {
     font-family: Roboto, sans-serif;
@@ -146,13 +144,11 @@ body {
   font-size: 2.5em;
   font-style: italic;
 }
-.title, .slogan {
-  text-shadow: 2px 2px black;
-}
 .about-title, .work-title, .skills-title, .testimonial-title, .contact-title {
-    font-size: 5em;
+  text-align: center;
+  font-size: 5em;
 }
-.about-para, .project, .skills-para, .skills-paraTwo, .testimonial-para, .contact-para, .contact-info {
+.about-para, .project-title, .skills-para, .skills-paraTwo, .testimonial-para, .contact-para, .contact-info {
   font-size: 1.5em;
   font-family: Roboto, sans-serif;
   font-weight: 300;
@@ -162,13 +158,10 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 300;
 }
-.about-para {
-  background: rgba(000,0,0,0.5);
-  padding: 1.5em;
-}
-.testimonial-para {
-  background: rgba(000,0,0,0.8);
-  padding: 1.5em;
+.project-link {
+  font-size: 1.5em;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
 }
 .bar-menu li, .footer {
   font-family: Roboto, sans-serif;
@@ -177,22 +170,14 @@ body {
 .footer {
   text-align: center;
 }
-@media only screen and (max-width: 1000px) {
-  .masthead {
-    height: 40em;
-  }
-}
 @media only screen and (max-width: 830px) {
-    .about-para, .skills-para, .skills-paraTwo, .testimonial-para, .contact-para, .contact-info {
-      font-size: 1.15em;
-    }
-}
-@media only screen and (max-width: 625px) {
-  .title, .about-title, .work-title, .skills-title, .testimonial-title, .contact-title {
-    font-size: 3.5em;
+  .about-para, .skills-para, .skills-paraTwo, .testimonial-para, .contact-para, .contact-info {
+    font-size: 1.15em;
   }
-  .title {
-    padding-top: 1.5em;
+}
+@media only screen and (max-width: 800px) {
+  .title, .about-title, .work-title, .skills-title, .testimonial-title, .contact-title {
+    font-size: 3em;
   }
   .slogan {
     font-size: 2em;
