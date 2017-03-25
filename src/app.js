@@ -1,5 +1,4 @@
 $(function() {
-  $('.slogan').toggle('slide', {direction: 'left'}, 1500);
   $('.about-menu').click(function() {
     scrollAbout();
     $(this).addClass('menu-select');
