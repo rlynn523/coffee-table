@@ -6,7 +6,8 @@
   "scripts": {
     "start": "http-server -c-1 -o",
     "add" : "git add -A",
-    "push" : "git push origin staging"
+    "push" : "git push origin staging",
+    "compress" : "cd src && cd images && tinypng . -r -k W4Pq0EYK8Z4KNhTY8oYO9pkOyYh60h-f"
   },
   "author": "",
   "license": "ISC"
