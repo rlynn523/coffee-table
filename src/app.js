@@ -3,7 +3,6 @@ $(function() {
     scrollAbout();
     $(this).addClass('menu-select');
     $('.testimonial-menu').removeClass('menu-select');
-    $('.skills-menu').removeClass('menu-select');
     $('.work-menu').removeClass('menu-select');
     $('.bar-menu').hide('bar-menu');
     $('.fa-times-circle-o').hide();
@@ -15,7 +14,6 @@ $(function() {
     $('.about-menu').removeClass('menu-select');
     $('.contact-menu').removeClass('menu-select');
     $('.work-menu').removeClass('menu-select');
-    $('.skills-menu').removeClass('menu-select');
     $('.bar-menu').hide('bar-menu');
     $('.fa-times-circle-o').hide();
     $('.fa-bars').show();
@@ -25,18 +23,6 @@ $(function() {
     $(this).addClass('menu-select');
     $('.about-menu').removeClass('menu-select');
     $('.contact-menu').removeClass('menu-select');
-    $('.skills-menu').removeClass('menu-select');
-    $('.testimonial-menu').removeClass('menu-select');
-    $('.bar-menu').hide('bar-menu');
-    $('.fa-times-circle-o').hide();
-    $('.fa-bars').show();
-  });
-  $('.skills-menu').click(function() {
-    scrollSkills();
-    $(this).addClass('menu-select');
-    $('.about-menu').removeClass('menu-select');
-    $('.contact-menu').removeClass('menu-select');
-    $('.work-menu').removeClass('menu-select');
     $('.testimonial-menu').removeClass('menu-select');
     $('.bar-menu').hide('bar-menu');
     $('.fa-times-circle-o').hide();
@@ -48,7 +34,6 @@ $(function() {
     $('.about-menu').removeClass('menu-select');
     $('.testimonial-menu').removeClass('menu-select');
     $('.work-menu').removeClass('menu-select');
-    $('.skills-menu').removeClass('menu-select');
     $('.bar-menu').hide('bar-menu');
     $('.fa-times-circle-o').hide();
     $('.fa-bars').show();
@@ -76,9 +61,6 @@ function scrollAbout(){
 }
 function scrollWork(){
    $('html, body').animate({ scrollTop: $('.work').position().top - $(".menu").height()}, 1500);
-}
-function scrollSkills(){
-   $('html, body').animate({ scrollTop: $('.skills').position().top - $(".menu").height()}, 1500);
 }
 function scrollTestimonial(){
    $('html, body').animate({ scrollTop: $('.testimonial').position().top - $(".menu").height()}, 1500);
