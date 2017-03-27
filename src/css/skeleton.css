@@ -130,7 +130,7 @@ body {
   font-family: 'Proza Libre', sans-serif;
   color: #FFFFFF;
 }
-.skills-title, .contact-title, .work-title {
+.contact-title, .work-title {
   font-family: 'Proza Libre', sans-serif;
 }
 .menu-title, .menu-items li {
@@ -138,28 +138,23 @@ body {
     color: #000000;
 }
 .title {
-  font-size: 4.5em;
+  font-size: 4.25em;
 }
 .slogan {
   font-size: 2em;
   font-style: italic;
 }
-.about-title, .work-title, .skills-title, .testimonial-title, .contact-title {
+.about-title, .work-title, .testimonial-title, .contact-title {
   text-align: center;
   font-size: 5em;
 }
-.about-para, .project-title, .skills-para, .skills-paraTwo, .testimonial-para, .contact-para, .contact-info {
+.about-para, .project-title, .testimonial-para, .contact-para, .contact-info {
   font-size: 1.5em;
   font-family: Roboto, sans-serif;
   font-weight: 300;
 }
-.project-text {
+.project-text, .tech, .project-link {
   font-size: 1em;
-  font-family: Roboto, sans-serif;
-  font-weight: 300;
-}
-.project-link {
-  font-size: 1.5em;
   font-family: Roboto, sans-serif;
   font-weight: 300;
 }
@@ -171,13 +166,13 @@ body {
   text-align: center;
 }
 @media only screen and (max-width: 830px) {
-  .about-para, .skills-para, .skills-paraTwo, .testimonial-para, .contact-para, .contact-info {
+  .about-para, .testimonial-para, .contact-para, .contact-info {
     font-size: 1.15em;
   }
 }
 @media only screen and (max-width: 800px) {
-  .title, .about-title, .work-title, .skills-title, .testimonial-title, .contact-title {
-    font-size: 3em;
+  .title, .about-title, .work-title, .testimonial-title, .contact-title {
+    font-size: 2.5em;
   }
   .slogan {
     font-size: 2em;

@@ -7,10 +7,10 @@ html {
 
 /*~~~~~~ SECTIONS ~~~~~~*/
 
-.about-title, .testimonial-title, .skills-title, .contact-title, .work-title {
+.about-title, .testimonial-title, .contact-title, .work-title {
     margin-top: 5%;
 }
-.about, .work, .skills, .testimonial, .contact {
+.about, .work, .testimonial, .contact {
   padding-bottom: 5%;
 }
 /*~~~~~~ MENU ~~~~~~*/
@@ -25,7 +25,6 @@ html {
 }
 .menu-title {
   float: left;
-  line-height: 2.5em;
 }
 .menu ul {
   list-style: none;
@@ -103,7 +102,7 @@ a {
   border: 2px solid #FFFFFF;
 }
 
-/*~~~~~~ WORK/SKILLS ~~~~~~*/
+/*~~~~~~ WORK ~~~~~~*/
 
 #live-vinyl, #iss-spotter, #shelter-dog, #tv-ratings {
     margin-bottom: 2em;
@@ -180,11 +179,11 @@ a {
 #contact-icons {
   text-align: center;
 }
-.fa-phone, .fa-envelope {
+.fa-phone, .fa-envelope, .fa-linkedin-square {
   margin: 1em 0;
   color: #000000;
 }
-.fa-phone:hover, .fa-envelope:hover {
+.fa-phone:hover, .fa-envelope:hover, .fa-linkedin-square:hover {
   transform: rotate(360deg);
   transition-duration:1s;
   color: #939393;
@@ -242,9 +241,6 @@ a {
 @media only screen and (max-width: 550px) {
   .family {
     margin: auto;
-  }
-  .skills-para {
-    margin-bottom: 0;
   }
   .project-title {
     margin-top: 5%;
