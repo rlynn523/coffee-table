@@ -5,10 +5,19 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server -c-1 -o",
-    "add" : "git add -A",
-    "push" : "git push origin staging",
-    "compress" : "cd src && cd images && tinypng . -r -k W4Pq0EYK8Z4KNhTY8oYO9pkOyYh60h-f"
+    "add": "git add -A",
+    "push": "git push origin staging",
+    "compress": "cd src && cd images && tinypng . -r -k W4Pq0EYK8Z4KNhTY8oYO9pkOyYh60h-f",
+    "mkdir": "mkdir -p build",
+    "build": "npm run clean && npm run mkdir && npm run build:css",
+    "clean": "rm -rf build",
+    "build:css": "npm run build:css:minified",
+    "watch:css": "npm run watch:css:minified",
+    "clean:css": "npm run clean:css:minified"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "clean-css": "^4.0.10"
+  }
 }
