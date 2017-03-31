@@ -67,7 +67,7 @@ a {
 }
 .masthead {
   background: url('../images/coffee.png');
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -81,7 +81,7 @@ a {
   color: #FFFFFF;
   background-image: url('../images/about.png');
   filter: grayscale(100%);
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,7 +139,7 @@ a {
   color: #FFFFFF;
   background-image: url('../images/testimonial.png');
   filter: grayscale(100%);
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
