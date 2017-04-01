@@ -4,6 +4,7 @@ $(function() {
     $(this).addClass('menu-select');
     $('.testimonial-menu').removeClass('menu-select');
     $('.work-menu').removeClass('menu-select');
+    $('.contact-menu').removeClass('menu-select');
     $('.bar-menu').hide('bar-menu');
     $('.fa-times-circle-o').hide();
     $('.fa-bars').show();
